@@ -1,0 +1,6 @@
+plotly
+pandas
+streamlit
+numpy
+duckdb
+pathlib
