@@ -1,5 +1,4 @@
 # RUN THIS CODE ON TERMINAL
-# streamlit run C:\Users\Laura\Documents\Python_Scripts\wdi_streamlit_api\wdi_streamlit_main_app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -99,7 +98,7 @@ def create_scatter(df):
         y="cumulative_emissions_total",
         animation_frame="Year",
         animation_group="Code",
-        size="cumulative_emissions_total",
+        size="population",
         color="Code",
         hover_name="Entity",
         log_x=True,
@@ -133,3 +132,4 @@ with tab3:
     st.plotly_chart(create_scatter(plot_data), use_container_width=True)
 
     
+
