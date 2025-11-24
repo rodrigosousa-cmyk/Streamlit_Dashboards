@@ -98,7 +98,7 @@ def create_scatter(df):
         y="cumulative_emissions_total",
         animation_frame="Year",
         animation_group="Code",
-        size="population",
+        size="cumulative_emissions_total",
         color="Code",
         hover_name="Entity",
         log_x=True,
@@ -132,4 +132,5 @@ with tab3:
     st.plotly_chart(create_scatter(plot_data), use_container_width=True)
 
     
+
 
