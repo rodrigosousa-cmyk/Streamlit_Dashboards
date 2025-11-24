@@ -12,8 +12,8 @@ st.set_page_config(layout="wide")
 st.title("CO2 Emissions Animation")
 
 # Constants
-CSV_PATH = "C:/DATASETS/CO2_Emissions_Dataset.csv"
-PARQUET_PATH = "C:/DATASETS/CO2_Emissions_Dataset.parquet"
+CSV_PATH = "CO2_Emissions_Dataset.csv"
+PARQUET_PATH = "CO2_Emissions_Dataset.parquet"
 
 # Cache database connection
 @st.cache_resource
@@ -131,4 +131,5 @@ with tab2:
  
 with tab3:
     st.plotly_chart(create_scatter(plot_data), use_container_width=True)
+
     
